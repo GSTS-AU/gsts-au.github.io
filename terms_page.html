@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - Glenn Stampalia Technology Solutions (GSTS)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&family=Roboto+Mono:wght@300;400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #d9d9d9 0%, #f5f5f5 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #006D77 0%, #004a52 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent 40%, rgba(255,127,0,0.1) 50%, transparent 60%);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%); }
+            100% { transform: translateX(100%) translateY(100%); }
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 400;
+        }
+        
+        nav {
+            background-color: #ffffff;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,109,119,0.15);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 1rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #006D77;
+            font-weight: 500;
+            font-family: 'Rubik', sans-serif;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            background-color: #006D77;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,109,119,0.3);
+        }
+        
+        .section {
+            background: linear-gradient(135deg, #ffffff 0%, rgba(217,217,217,0.1) 100%);
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,109,119,0.1);
+            border: 1px solid rgba(0,109,119,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #006D77 0%, #FF7F00 100%);
+        }
+        
+        .section h2 {
+            color: #006D77;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: linear-gradient(90deg, #FF7F00 0%, #006D77 100%);
+        }
+        
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .policy-content h3 {
+            color: #006D77;
+            margin: 1.5rem 0 0.5rem 0;
+            font-weight: 600;
+        }
+        
+        .policy-content ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #006D77;
+            text-decoration: none;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: linear-gradient(135deg, #006D77 0%, #004a52 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            position: relative;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #FF7F00 0%, #006D77 50%, #FF7F00 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Glenn Stampalia Technology Solutions</h1>
+            <p class="tagline">Terms & Conditions</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="privacy_page.html">Privacy Policy</a></li>
+                <li><a href="terms_page.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="section">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            
+            <div class="policy-content">
+                <h2>Terms and Conditions</h2>
+                <p><strong>Effective Date:</strong> December 2024</p>
+                
+                <h3>Acceptance of Terms</h3>
+                <p>By engaging Glenn Stampalia Technology Solutions (GSTS) for services or products, you agree to be bound by these terms and conditions. These terms apply to all quotes, orders, and service agreements.</p>
+                
+                <h3>Services</h3>
+                <p><strong>Service Scope:</strong> GSTS provides technology consulting, implementation, management, and support services as outlined in individual service agreements or quotes.</p>
+                
+                <p><strong>Service Delivery:</strong> We provide technology solutions during business hours (Monday to Friday, 9 AM to 5 PM AWST) unless otherwise arranged. Response times vary based on service level agreements.</p>
+                
+                <p><strong>Client Responsibilities:</strong> Clients must provide accurate information, reasonable access to systems, and timely feedback to ensure successful service delivery.</p>
+                
+                <h3>Return Policy</h3>
+                <p><strong>General Returns:</strong> GSTS supplies goods and services subject to manufacturer and supplier conditions. Returns are subject to these third-party policies and our assessment of returnability.</p>
+                
+                <p><strong>Customized Solutions:</strong> Technology solutions with customization elements, special configurations, or those obtained specifically for your requirements may not be returnable.</p>
+                
+                <p><strong>Inspection Period:</strong> You must inspect all delivered goods and services within 7 days. Any issues must be reported in writing within this period.</p>
+                
+                <p><strong>Return Condition:</strong> Returnable items must be in original condition and unopened, except where opening reveals defects or incorrect items.</p>
+                
+                <p><strong>Return Costs:</strong> You are responsible for costs associated with returns unless the issue is due to our error or defective goods.</p>
+                
+                <h3>Refund Policy</h3>
+                <p><strong>Service Refunds:</strong> Refunds for services are assessed case-by-case based on work completed and value delivered. Pre-paid service blocks unused within the specified period cannot be refunded or rolled over.</p>
+                
+                <p><strong>Product Refunds:</strong> Product refunds are subject to supplier policies and may include restocking fees. We must receive supplier approval before processing refunds.</p>
+                
+                <p><strong>Cancellation Policy:</strong> Orders may be cancelled before supplier dispatch, subject to cancellation fees. Services may be cancelled with appropriate notice as outlined in service agreements.</p>
+                
+                <p><strong>Processing Time:</strong> Approved refunds are processed within 10 business days, minus any applicable fees or charges.</p>
+                
+                <h3>Payment Terms</h3>
+                <p><strong>Payment Due:</strong> Invoices are due within terms specified on the invoice (typically 30 days from invoice date).</p>
+                
+                <p><strong>Late Payments:</strong> Late payments may result in service suspension, additional charges, and interest at 1.5% per month on overdue amounts.</p>
+                
+                <p><strong>Disputed Invoices:</strong> Payment disputes must be raised within 7 days of invoice receipt. Undisputed portions remain payable.</p>
+                
+                <h3>Intellectual Property</h3>
+                <p><strong>Client Data:</strong> All client data remains the property of the client. GSTS maintains confidentiality of client information.</p>
+                
+                <p><strong>Custom Solutions:</strong> Intellectual property rights for custom solutions developed specifically for clients are transferred upon full payment, unless otherwise agreed.</p>
+                
+                <p><strong>Standard Solutions:</strong> GSTS retains rights to standard methodologies, processes, and solutions used across multiple clients.</p>
+                
+                <h3>Limitation of Liability</h3>
+                <p><strong>Liability Limits:</strong> Our liability is limited to the value of services provided for the specific engagement. We are not liable for consequential damages, business losses, or lost profits.</p>
+                
+                <p><strong>Third-Party Products:</strong> For third-party products and services, our liability is limited to our service fees. Product warranties and support are provided by the respective manufacturers.</p>
+                
+                <p><strong>Force Majeure:</strong> We are not liable for delays or failures due to circumstances beyond our reasonable control.</p>
+                
+                <h3>Confidentiality</h3>
+                <p>Both parties agree to maintain confidentiality of sensitive information shared during the engagement. This obligation survives termination of the agreement.</p>
+                
+                <h3>Termination</h3>
+                <p>Either party may terminate ongoing service agreements with 30 days written notice. Immediate termination is permitted for material breach of terms.</p>
+                
+                <h3>Governing Law</h3>
+                <p>These terms are governed by the laws of Western Australia. Any disputes will be resolved in the courts of Western Australia.</p>
+                
+                <h3>Changes to Terms</h3>
+                <p>We may update these terms from time to time. Continued engagement after changes constitutes acceptance of the updated terms.</p>
+                
+                <h3>Contact Information</h3>
+                <p>For questions about these terms, returns, refunds, or any other matters, please contact us through the website contact form or as specified in your service agreement.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Glenn Stampalia Technology Solutions (GSTS). All rights reserved.</p>
+            <p>Professional Technology Solutions Provider</p>
+        </div>
+    </footer>
+</body>
+</html>
